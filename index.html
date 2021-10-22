@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+
+<body style="text-align: center;">
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <script>
+        var num = parseInt(Math.random() * 10 + 1);
+        var userGuess = prompt("input a guess number between 1 to 10");
+        if (num == userGuess) {
+            document.getElementById("id1").innerHTML = "Good Work"
+            //alert(" Good Work ");
+        } else {
+            document.getElementById("id2").innerHTML = `Not matched. Number was ${userGuess}`
+            //alert("Not matched. Number was " + num);
+        }
+    </script>
+</body>
+
+</html>
+© 2021 GitHub, Inc.
